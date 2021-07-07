@@ -1,0 +1,29 @@
+current directory: /home/sukritwalia/code/labs/rails/join-the-fun-rails-dumbo-web-080519/vendor/cache/ruby/2.6.0/gems/sassc-2.2.0/ext
+/home/sukritwalia/.rvm/rubies/ruby-2.6.4/bin/ruby -I /home/sukritwalia/.rvm/rubies/ruby-2.6.4/lib/ruby/site_ruby/2.6.0 -r ./siteconf20190904-20069-1oscu0k.rb extconf.rb
+creating Makefile
+
+current directory: /home/sukritwalia/code/labs/rails/join-the-fun-rails-dumbo-web-080519/vendor/cache/ruby/2.6.0/gems/sassc-2.2.0/ext
+make "DESTDIR=" clean
+
+current directory: /home/sukritwalia/code/labs/rails/join-the-fun-rails-dumbo-web-080519/vendor/cache/ruby/2.6.0/gems/sassc-2.2.0/ext
+make "DESTDIR="
+compiling ./libsass/src/expand.cpp
+In file included from ./libsass/src/ast.hpp:19:0,
+                 from ./libsass/src/expand.cpp:8:
+./libsass/src/util.hpp: In function 'T Sass::absmod(const T&, const T&)':
+./libsass/src/util.hpp:28:11: error: 'fmod' is not a member of 'std'
+     T m = std::fmod(n, r);
+           ^
+./libsass/src/util.hpp:28:11: note: suggested alternative:
+In file included from /usr/include/features.h:446:0,
+                 from /home/linuxbrew/.linuxbrew/Cellar/gcc/5.5.0_4/include/c++/5.5.0/x86_64-unknown-linux-gnu/bits/os_defines.h:39,
+                 from /home/linuxbrew/.linuxbrew/Cellar/gcc/5.5.0_4/include/c++/5.5.0/x86_64-unknown-linux-gnu/bits/c++config.h:489,
+                 from /home/linuxbrew/.linuxbrew/Cellar/gcc/5.5.0_4/include/c++/5.5.0/string:38,
+                 from ./libsass/src/sass.hpp:55,
+                 from ./libsass/src/expand.cpp:3:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:168:1: note:   'fmod'
+ __MATHCALL (fmod,, (_Mdouble_ __x, _Mdouble_ __y));
+ ^
+make: *** [Makefile:236: expand.o] Error 1
+
+make failed, exit code 2
